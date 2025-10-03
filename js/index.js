@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Instructions
 
-        if(recipeInstructions === null) {
+        if (recipeInstructions === null) {
             const noInst = document.createElement('noInst');
             noInst.classList.add('noInst');
             const noInstructions = document.createElement('p');
@@ -77,23 +77,20 @@ document.addEventListener('DOMContentLoaded', () => {
             noInst.appendChild(noInstructions);
             containerElement.appendChild(noInst);
         } else {
-        const instructionsTitle = document.createElement('h3');
-        instructionsTitle.textContent = 'Instructions:';
-        containerElement.appendChild(instructionsTitle);
+            const instructionsTitle = document.createElement('h3');
+            instructionsTitle.textContent = 'Instructions:';
+            containerElement.appendChild(instructionsTitle);
 
-        const instructionsList = document.createElement('p');
-        instructionsList.innerHTML = recipeInstructions
-        containerElement.appendChild(instructionsList);
+            const instructionsList = document.createElement('p');
+            instructionsList.innerHTML = recipeInstructions
+            containerElement.appendChild(instructionsList);
         }
-      
+
     }
 
     const footerElement = document.querySelector('.footer');
     const footer = document.createElement('footer');
     footer.innerHTML = '&#169 2025 All rights reserved';
     footerElement.appendChild(footer);
-
-
-
 
 });
