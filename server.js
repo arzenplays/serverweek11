@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const recipeRouter = require('./routes/recipes.routes');
 const ingredientRouter = require('./routes/ingredients.routes');
 const fullRecipesRouter = require('./routes/fullRecipes.routes');
@@ -8,7 +9,9 @@ const todoRouter = require('./routes/todo.routes');
 const defaultRouter = require('./routes/default.routes')
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/css', express.static(path.join(__dirname, 'css')));
+app.use(express.static(path.join(__dirname, 'js')));
 app.use(express.json());
 app.use(cors());
 

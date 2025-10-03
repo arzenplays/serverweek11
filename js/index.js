@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
 
     const containerElement = document.querySelector('.recipe');
@@ -22,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Image
         const recipeImage = document.createElement('img');
+        recipeImage.classList.add('img');
         recipeImage.src = imageUrl;
         containerElement.appendChild(recipeImage);
 
@@ -88,4 +87,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       
     }
+
+    const footerElement = document.querySelector('.footer');
+    const footer = document.createElement('footer');
+    footer.innerHTML = '&#169 2025 All rights reserved';
+    footerElement.appendChild(footer);
+
+
+
+
 });

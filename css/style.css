@@ -69,15 +69,6 @@ header{
     gap: 1rem;
 }
 
-
-.profile-picture{
-    width: 6.25rem;
-    height: 6.25rem;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-
 main{
     width: 100%;
     height: auto;
@@ -126,6 +117,14 @@ main p{
     font-weight: 100;
     font-size: small;
 }
+
+.img{
+    width: 25rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+
 
 .header-row {
     color: var(--muted-grey);
